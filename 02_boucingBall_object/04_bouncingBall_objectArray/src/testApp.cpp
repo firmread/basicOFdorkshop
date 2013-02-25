@@ -31,7 +31,13 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-
+    
+    // press space bar to reset the position of balls again
+    if (key == ' ') {
+        for (int i = 0; i < NUM_BALL; i++) {
+            b[i].setup();
+        }
+    }
 }
 
 //--------------------------------------------------------------
